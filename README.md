@@ -22,6 +22,13 @@ These docs will (hopefully) improve
   console.log(response);
 ```
 
+# Todo
+
+- more endpoints
+- helper functions for loading/autoloading certs
+- potentially export an abstraction in additional to all the utility methods
+- rewrite discoverMeters() to use our own retry/timeout logic
+
 # Credits
 
 This library would not have been possible without @zaknye's excellent [xcel_itron2mqtt](https://github.com/zaknye/xcel_itron2mqtt) to reference. Major props to him for doing the hard work.
