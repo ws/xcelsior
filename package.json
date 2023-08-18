@@ -64,6 +64,7 @@
     "nyc": "^15.1.0",
     "open-cli": "^7.2.0",
     "prettier": "^3.0.2",
+    "sinon": "^15.2.0",
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.1",
     "typedoc": "^0.24.8",
@@ -108,7 +109,6 @@
   "dependencies": {
     "from-xml": "^0.1.9",
     "node-dns-sd": "^1.0.1",
-    "node-forge": "^1.3.1",
-    "sinon": "^15.2.0"
+    "node-forge": "^1.3.1"
   }
 }
