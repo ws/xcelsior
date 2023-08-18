@@ -12,7 +12,11 @@
     "smartenergy",
     "additionals",
     "rdata",
-    "sdev"
+    "sdev",
+    "autoloading",
+    "zaknye's",
+    "bitjson's",
+    "dcap"
   ],
   "flagWords": [],
   "ignorePaths": [
