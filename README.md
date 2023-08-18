@@ -25,3 +25,5 @@ These docs will (hopefully) improve
 # Credits
 
 This library would not have been possible without @zaknye's excellent [xcel_itron2mqtt](https://github.com/zaknye/xcel_itron2mqtt) to reference. Major props to him for doing the hard work.
+
+Also want to shout out @bitjson's [https://github.com/bitjson/typescript-starter](typescript-starter) that served as a great jumping off point
