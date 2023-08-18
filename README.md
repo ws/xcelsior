@@ -29,7 +29,6 @@ These docs will (hopefully) improve
 - potentially export an abstraction in additional to all the utility methods
 - rewrite discoverMeters() to use our own retry/timeout logic
 - script to generate cert ([this](https://github.com/zaknye/xcel_itron2mqtt/blob/main/scripts/generate_keys.sh), in js)
-- move the agent code out of crypt and into it's own file
 
 # Credits
 

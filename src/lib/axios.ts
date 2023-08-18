@@ -1,6 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 
-import { createAgent, Credentials } from './crypto';
+import { Credentials } from './crypto';
+import { createAgent } from './httpsAgent';
 
 export const createSession = (
   ipAddress: string, // can also be hostname
