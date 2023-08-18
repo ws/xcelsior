@@ -28,9 +28,10 @@ These docs will (hopefully) improve
 - helper functions for loading/autoloading certs
 - potentially export an abstraction in additional to all the utility methods
 - rewrite discoverMeters() to use our own retry/timeout logic
+- script to generate cert ([this](https://github.com/zaknye/xcel_itron2mqtt/blob/main/scripts/generate_keys.sh), in js)
 
 # Credits
 
 This library would not have been possible without @zaknye's excellent [xcel_itron2mqtt](https://github.com/zaknye/xcel_itron2mqtt) to reference. Major props to him for doing the hard work.
 
-Also want to shout out @bitjson's [https://github.com/bitjson/typescript-starter](typescript-starter) that served as a great jumping off point
+Also want to shout out @bitjson's [typescript-starter](https://github.com/bitjson/typescript-starter) that served as a great jumping off point
