@@ -18,8 +18,6 @@ export const discoverMeters = async (
     filter: (d) => d.fqdn?.includes('itron') || false, // this doesn't appear to work so we double-filter below
   });
 
-  console.log(JSON.stringify(results));
-
   return results
     .filter((d) => d.fqdn?.includes('itron') || false) // rare edge case: this will cause unexpected behavior when quick=true and there is a non-itron meter on the network
     .map((result) => ({
