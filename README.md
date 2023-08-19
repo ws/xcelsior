@@ -27,7 +27,7 @@ These docs will (hopefully) improve
 - more endpoints
 - helper functions for loading/autoloading certs
 - potentially export an abstraction in additional to all the utility methods
-- rewrite discoverMeters() to use our own retry/timeout logic
+- write tests for new discovery code
 - script to generate cert ([this](https://github.com/zaknye/xcel_itron2mqtt/blob/main/scripts/generate_keys.sh), in js)
 
 # Credits
