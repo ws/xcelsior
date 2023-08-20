@@ -60,6 +60,7 @@
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-prettier": "^5.0.0",
     "gh-pages": "^6.0.0",
+    "nock": "^13.3.3",
     "npm-run-all": "^4.1.5",
     "nyc": "^15.1.0",
     "open-cli": "^7.2.0",
@@ -89,7 +90,8 @@
       }
     },
     "files": [
-      "!build/module/**"
+      "!build/module/**",
+      "!src/tests/utils/*"
     ]
   },
   "config": {

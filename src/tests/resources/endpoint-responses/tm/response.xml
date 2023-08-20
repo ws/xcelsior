@@ -1,0 +1,10 @@
+<Time
+  xmlns="urn:ieee:std:2030.5:ns"
+  href="/tm">
+  <currentTime>1692501549</currentTime>
+  <dstEndTime>0</dstEndTime>
+  <dstOffset>0</dstOffset>
+  <dstStartTime>0</dstStartTime>
+  <quality>5</quality>
+  <tzOffset>0</tzOffset>
+</Time>

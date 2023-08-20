@@ -1,0 +1,10 @@
+<Reading
+  xmlns="urn:ieee:std:2030.5:ns"
+  href="/upt/1/mr/1/r">
+  <qualityFlags>01</qualityFlags>
+  <timePeriod>
+    <duration>1</duration>
+    <start>1692501718</start>
+  </timePeriod>
+  <value>100</value>
+</Reading>

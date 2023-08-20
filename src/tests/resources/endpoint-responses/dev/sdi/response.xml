@@ -1,0 +1,14 @@
+<DeviceInformation
+  xmlns="urn:ieee:std:2030.5:ns"
+  href="/sdev/sdi">
+  <lFDI>0000000000000000000000000000000000000000</lFDI>
+  <mfDate>0</mfDate>
+  <mfHwVer></mfHwVer>
+  <mfID>1233</mfID>
+  <mfModel></mfModel>
+  <mfSerNum></mfSerNum>
+  <primaryPower>1</primaryPower>
+  <secondaryPower>0</secondaryPower>
+  <swActTime>0</swActTime>
+  <swVer>10.2.544.2</swVer>
+</DeviceInformation>
