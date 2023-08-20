@@ -1,6 +1,11 @@
 import { createSecureContext } from 'node:tls';
 
-import { md, util } from 'node-forge';
+import { Crypto } from '@peculiar/webcrypto';
+import * as x509 from '@peculiar/x509';
+
+// WebCrypto shim since node crypto doesn't support everything we need
+const crypto = new Crypto();
+x509.cryptoProvider.set(crypto);
 
 type CertPem = string;
 type KeyPem = string;
@@ -21,24 +26,16 @@ export const isValidCredentials = (
   }
 };
 
-export const getLfdi = (cert: CertPem): string => {
-  // Convert the PEM certificate to a DER format
-  const certDer = util.decode64(
-    cert.replace(/(-----(BEGIN|END) CERTIFICATE-----|\s)/g, ''),
-  );
+export const getLfdi = async (cert: CertPem): Promise<string> => {
+  const certificate = new x509.X509Certificate(cert);
 
-  // Create a SHA-256 hash object
-  const hash = md.sha256.create();
+  const thumbprint = await certificate.getThumbprint('SHA-256');
+  const hexThumbprint = Buffer.from(thumbprint as ArrayBuffer)
+    .toString('hex')
+    .slice(0, 40);
 
-  // Update the hash object with the DER data
-  hash.update(certDer);
-
-  // Get the digest in hex format and take the first 40 characters
-  const hexFingerprint = hash.digest().toHex().substring(0, 40);
-
-  // Format the fingerprint into groups of 5 characters (like it displays on the Xcel site)
   const lfdi =
-    hexFingerprint
+    hexThumbprint
       .match(/.{1,5}/g)
       ?.join('-')
       .toUpperCase() || '';

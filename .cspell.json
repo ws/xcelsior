@@ -16,7 +16,11 @@
     "autoloading",
     "zaknye's",
     "bitjson's",
-    "dcap"
+    "dcap",
+    "Riva",
+    "commandable",
+    "rtlamr",
+    "LDFI"
   ],
   "flagWords": [],
   "ignorePaths": [
