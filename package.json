@@ -36,20 +36,24 @@
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
     "version": "standard-version",
     "reset-hard": "git clean -dfx && git reset --hard && npm i",
-    "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
+    "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish",
+    "postinstall": "npm run build"
   },
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
     "@ava/typescript": "^4.1.0",
+    "@inquirer/confirm": "^2.0.9",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "^18.17",
     "@types/sinon": "^10.0.16",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "ava": "^5.3.1",
     "codecov": "^3.8.2",
+    "commander": "^11.0.0",
     "cspell": "^7.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.47.0",
@@ -58,6 +62,7 @@
     "eslint-plugin-functional": "^6.0.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "fs-extra": "^11.1.1",
     "gh-pages": "^6.0.0",
     "nock": "^13.3.3",
     "npm-run-all": "^4.1.5",
