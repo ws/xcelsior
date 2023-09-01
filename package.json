@@ -115,6 +115,7 @@
   "dependencies": {
     "@peculiar/webcrypto": "^1.4.3",
     "@peculiar/x509": "^1.9.5",
+    "axios": "^1.5.0",
     "bonjour-service": "^1.1.1",
     "from-xml": "^0.1.9"
   }
